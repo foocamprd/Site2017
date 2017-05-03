@@ -1,0 +1,311 @@
+/*Common*/
+.subtitle {
+  text-align: center;
+  color: #d32229;
+}
+
+.title-rule {
+  margin-top: 0rem;
+  margin-bottom: 3rem;
+  border: 0;
+  border-top: 5px solid #0479bd;
+  width: 5%;
+}
+/*EndCommon*/
+
+section {
+  min-height: 80vh;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+  border-bottom: 2px solid #ccc;
+}
+
+.card .card-block .card-text{
+  text-align: justify;
+  overflow-y: scroll;
+  font-size: 16px;
+  height: 190px;
+}
+
+.card {
+  margin: auto;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+/*info*/
+#info {
+
+}
+
+#info .subtitle {
+
+}
+
+#info .title-rule {
+
+}
+
+#info .box {
+  background-color: #d32229;
+  color: #fff;
+  /*background-color: #fff;*/
+  width: 100%;
+  text-align: justify;
+  border: 1px solid #5c5c5c;
+  padding: 5%;
+  box-shadow: 4px 4px 4px #5c5c5c;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+#info .box .box-title {
+  margin-bottom: 25px;
+  text-align: center;
+}
+/*EndInfo*/
+
+/*Sesion*/
+#sesion {
+  background-color: #0479bd;
+}
+
+#sesion .subtitle {
+  color: #fff;
+}
+
+#sesion .title-rule {
+  border-color: #d32229;
+}
+
+
+#sesion .card {
+  border-top-left-radius: 10%;
+  border: 0;
+  box-shadow: 4px 4px 4px #024369;
+  height: 28rem;
+}
+
+#sesion .card .box {
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 15%;
+  text-align: center;
+  background-color: #d32229;
+  color: #fff;
+  padding-top: 2rem;
+
+  /*padding-bottom: 2rem;*/
+}
+
+#sesion .card .box .title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+#sesion .card .card-block .card-title .text-muted {
+  margin-top: 0.5rem;
+  font-size: 1.0rem;
+  float: right;
+}
+
+#sesion .card .box .subtitle {
+  font-size: 0.75rem;
+}
+
+
+#sesion .card .card-block footer cite {
+  float: right;
+}
+
+/*EndSesion*/
+
+/*chatters*/
+#chatter {
+
+}
+
+#chatter .card {
+  border-top-left-radius: 10%;
+  box-shadow: 4px 4px 4px #5d5d5d;
+  height: 32rem;
+}
+
+#chatter .card .card-img-top {
+  border-bottom: 4px solid #0479bd;
+}
+
+#chatter .card footer .fa {
+  color: #d32229;
+  font-size: 30px;
+  margin-right: 10px;
+  float: right;
+  padding-top: 0.5rem;
+}
+
+#chatter .card footer .fa:hover {
+  color: #0479bd;
+}
+
+
+
+/*EndChatters*/
+
+/*location*/
+#location {
+  heigh: 80vh;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#location .center {
+  display: flex;
+  justify-content: flex-end;
+  height: 80vh;
+}
+
+#location iframe {
+  width: 100%;
+  height: 80vh;
+  pointer-events: none;
+  cursor: default;
+  position: absolute;
+  z-index: 0;
+}
+
+#location .info {
+  position: relative;
+  float: right;
+  background-color: #fff;
+  z-index: 100;
+  width: 100%;
+  padding: 5%;
+  box-shadow: 4px 4px 4px #5d5d5d;
+}
+/*EndLocation*/
+
+/*footer*/
+.last {
+  padding-top: 3rem;
+  color: #fff;
+  background-color: #000;
+}
+
+.last .center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.last .center .image {
+  width: 100px;
+  margin-left: 30%;
+}
+
+.last .text-center {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 14px;
+  margin-bottom: 2rem;
+}
+
+.last .fa {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.last p {
+  margin-bottom: 0;
+}
+
+.last .text-center span{
+  color: #3d68c1;
+}
+/*EndFooter*/
+
+
+/*header*/
+.del-flex {
+  display: show !important;
+  width: auto !important;
+}
+
+
+.nav-link {
+  color: #fff !important;
+}
+
+.active .nav-link {
+  color: #d32229 !important;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #3d68c1 !important;
+}
+
+.navbar-brand img {
+  height: 30px;
+  width: auto;
+  margin-left: 75px;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.flex-center img {
+  height: 25px;
+  margin-right: 15px;
+}
+/*Endheader*/
+
+@media(min-width:1024px) {
+  .last .center {
+    border-right: 2px solid #fff;
+  }
+
+  #info .box {
+    width: 80%;
+  }
+
+  .card {
+    margin-bottom: 0;
+    width: 90%;
+  }
+
+  #info .box {
+    margin-bottom: 0;
+    height: 250px;
+  }
+  .test {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 75px;
+  }
+
+  .navbar {
+      padding: 20px 0;
+      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+      padding: 0;
+  }
+}
