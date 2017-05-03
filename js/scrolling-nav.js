@@ -5,31 +5,25 @@ $(function() {
     });
 });
 
-// //jQuery for page scrolling feature - requires jQuery Easing plugin
-// $(function() {
-//     $(document).on('click', 'a.nav-link', function(event) {
-//         var $anchor = $(this);
-//         $('html, body').stop().animate({
-//             scrollTop: $($anchor.attr('href')).offset().top
-//         }, 1500, 'easeInOutExpo');
-//         event.preventDefault();
-//     });
-// });
-// 
-$(document).ready(function() {
-    // navigation click actions 
-    $('.nav-link').on('click', function(event){
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $(document).on('click', 'a.nav-link', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
         event.preventDefault();
-        var sectionID = $(this).attr("href");
-        scrollToID('#' + sectionID, 750);
     });
-}
+});
 
 $(function() {
-    $('.nav-link').on('click', function(event){
+    $(document).on('click', 'a.nav-link', function(event) {
+        var ref = $(this).attr('href');
+        $('.scroll-link').on('click', function(event){
             event.preventDefault();
-            var sectionID = $(this).attr("href");
-            scrollToID('#' + sectionID, 750);
+
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);        });
     })
 })
 

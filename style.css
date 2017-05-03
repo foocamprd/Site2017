@@ -11,7 +11,6 @@
   border-top: 5px solid #0479bd;
   width: 5%;
 }
-/*EndCommon*/
 
 section {
   min-height: 80vh;
@@ -32,6 +31,109 @@ section {
   margin-bottom: 25px;
   width: 100%;
 }
+/*EndCommon*/
+
+/*Home*/
+  #home {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  #home .jumbotron {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  #home .carousel-title {
+    text-align: center;
+    color: #fff;
+  }
+
+  #home .flex-center {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #home .blur {
+    background: rgba(0,0,0,0.5);
+    padding: 10px;
+  }
+
+  #home .btn-primary {
+    background-color: #0479bd;
+    color: #fff;
+  }
+
+  #home .btn-primary-red {
+    background-color: #d32229;
+    color: #fff;
+  }
+
+  #home .background {
+    background-image: url(image/neuralnetwork.png);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+  }
+
+  #home .background2 {
+    background-image: url(image/charlista.jpg);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+  }
+
+  #home .fl-cen {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #home h1 {
+    color: #0479bd;
+    text-align: center;
+  }
+
+  #home h1 span{
+    color: #d32229;
+  }
+
+  #clockdiv {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #clockdiv .day,
+  #clockdiv .hour {
+    color: #0479bd;
+  }
+
+  #clockdiv > div{
+    color: #d32229;
+  }
+
+  .smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .date {
+    text-align: center;
+    margin-top: 20px;
+  }
+/*EndHome*/
 
 /*info*/
 #info {
@@ -273,6 +375,38 @@ section {
 /*Endheader*/
 
 @media(min-width:1024px) {
+
+  #clockdiv div {
+    margin-left: 10px;
+  }
+
+  #clockdiv .day,
+  #clockdiv .hour {
+    color: #fff;
+    background: #0479bd;
+  }
+
+  #clockdiv .day span,
+  #clockdiv .hour span{
+    background: #024369;
+  }
+
+  #clockdiv > div{
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    background: #d32229;
+    display: inline-block;
+  }
+
+  #clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #831418;
+    display: inline-block;
+  }
+
+
   .last .center {
     border-right: 2px solid #fff;
   }
