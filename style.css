@@ -450,3 +450,7 @@ section {
     width: 5%;
   }
 }
+
+#sponsor .center img {
+  width: 100%;
+}
