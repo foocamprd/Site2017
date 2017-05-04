@@ -12,6 +12,22 @@
   width: 30px;
 }
 
+.card .btn-primary {
+  display: block !important;
+  width: 70%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.card .btn-primary-red {
+  display: block !important;
+  width: 70%;
+  margin: auto;
+  margin-top: 15px;
+  background-color: #d32229;
+  color: #fff;
+}
+
 section {
   min-height: 80vh;
   padding-top: 4rem;
@@ -38,7 +54,7 @@ section {
     margin-bottom: 0;
     padding-bottom: 0;
     padding-top: 3rem;
-    height: 100vh;
+    height: 80vh;
   }
   
   #home .jumbotron {
@@ -54,7 +70,7 @@ section {
 
   #home .flex-center {
     display: flex;
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     flex-direction: column;
   }
@@ -76,21 +92,21 @@ section {
 
   #home .background {
     background-image: url(image/neuralnetwork.png);
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-size: cover;
   }
 
   #home .background2 {
     background-image: url(image/charlista.jpg);
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-size: cover;
   }
 
   #home .fl-cen {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -140,7 +156,7 @@ section {
 
 /*info*/
 #info {
-
+  padding-top: 8rem;
 }
 
 #info .subtitle {
@@ -376,7 +392,10 @@ section {
   margin-right: 15px;
 }
 /*Endheader*/
-
+#sponsor .center img {
+  height: 50px;
+  margin-bottom: 30px;
+}
 @media(min-width:1024px) {
 
   #clockdiv div {
@@ -451,6 +470,11 @@ section {
   }
 }
 
-#sponsor .center img {
+#sponsor .center {
   width: 100%;
+  text-align: center;
+}
+
+#sponsor .center img {
+  height: 100px;
 }
