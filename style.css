@@ -316,11 +316,24 @@ section {
   justify-content: center;
   flex-direction: column;
   height: 100%;
+  display: inline-block;
+}
+
+.last .first {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.last .first .image {
+  width: 50%;
+  margin-left: 25%;
 }
 
 .last .center .image {
-  width: 100px;
-  margin-left: 30%;
+  width: 30%;
+  /*margin-left: 30%;*/
 }
 
 .last .text-center {
@@ -367,8 +380,8 @@ section {
 }
 
 .navbar-brand img {
-  height: 30px;
-  width: auto;
+/*  height: 30px;
+*/  width: 30%;
   margin-left: 75px;
 }
 
@@ -428,8 +441,7 @@ section {
     display: inline-block;
   }
 
-
-  .last .center {
+  .last .first {
     border-right: 2px solid #fff;
   }
 
@@ -478,3 +490,4 @@ section {
 #sponsor .center img {
   height: 100px;
 }
+
