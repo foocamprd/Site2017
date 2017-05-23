@@ -42,11 +42,16 @@ section {
   border-bottom: 2px solid #ccc;
 }
 
+.card .card-block .card-text::-webkit-scrollbar { 
+    display: none; 
+}
+
 .card .card-block .card-text{
   text-align: justify;
   overflow-y: scroll;
   font-size: 16px;
   height: 190px;
+
 }
 
 .card {
@@ -97,14 +102,17 @@ section {
     color: #fff;
   }
 
-  #home .background {
-    background-image: url(image/neuralnetwork.png);
+  #home .grid-box {
     height: 80vh;
     width: 100%;
-    background-size: cover;
+    padding-top: 2rem;
   }
 
-  #home .background2 {
+  #home .grid-box .container, #home .grid-box .container .row {
+    height: 100%;
+  }
+
+  #home .background {
     background-image: url(image/charlista.jpg);
     height: 80vh;
     width: 100%;
@@ -161,6 +169,79 @@ section {
   }
 /*EndHome*/
 
+/*grid image*/
+#grid {
+  width: 100%;
+}
+
+#grid img{
+  width: 100%;
+  height: 8rem;
+  border: 2px solid #000;
+  transition: all 5s;
+  position: relative;
+}
+
+
+.item:hover {
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item:hover img {
+  opacity: 0.3;
+}
+
+.item a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.item h4 {
+  color: #0479bd;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 10%;
+  width: 80%;
+  position: absolute;
+  top: 40%;
+}
+
+#sesion card {
+  transition: all 0.5s;
+}
+
+#sesion .active {
+  transform: scale(1.1);
+  border: 2px solid #d32229 !important;
+}
+
+#grid .item {
+  height: 8rem;
+}
+
+
+#big1 .item, #big2 .item {
+  height: 12rem;
+}
+
+#big1, #big2 {
+  width: 100%;
+}
+
+#big1 img, #big2 img{
+  width: 100%;
+  height: 12rem;
+  border: 4px solid #000;
+}
+
+.no-padding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 /*info*/
 #info {
   padding-top: 8rem;
@@ -175,9 +256,9 @@ section {
 }
 
 #info .box {
-  background-color: #d32229;
+  background-color: #d32229 !important;
   color: #fff;
-  /*background-color: #fff;*/
+  background-color: #d32229 !important;
   width: 100%;
   text-align: justify;
   border: 1px solid #5c5c5c;
@@ -191,7 +272,8 @@ section {
   margin-bottom: 25px;
   text-align: center;
 }
-/*EndInfo*/
+
+/*EndInfo
 
 /*Sesion*/
 #sesion {
@@ -211,7 +293,7 @@ section {
   border-top-left-radius: 10%;
   border: 0;
   box-shadow: 4px 4px 4px #024369;
-  height:34rem;
+  min-height:35rem;
   margin-bottom: 5rem;
 }
 
@@ -222,7 +304,7 @@ section {
   background-color: #d32229;
   color: #fff;
   padding-top: 2rem;
-  min-height: 200px;
+  min-height: 15rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -516,3 +598,11 @@ section {
   height: 100px;
 }
 
+@media(min-width:2048px) {
+  section {
+    min-height: 50vh !important;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+    border-bottom: 2px solid #ccc;
+  }
+}
