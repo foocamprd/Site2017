@@ -4,6 +4,13 @@
   color: #d32229;
 }
 
+.disabled {
+  color: #ccc !important;
+  opacity: 0.7 !important;
+  text-decoration-style: none;
+  cursor: default;
+}
+
 .title-rule {
   margin-top: 0rem;
   margin-bottom: 3rem;
@@ -204,7 +211,8 @@ section {
   border-top-left-radius: 10%;
   border: 0;
   box-shadow: 4px 4px 4px #024369;
-  height: 28rem;
+  height:34rem;
+  margin-bottom: 5rem;
 }
 
 #sesion .card .box {
@@ -214,7 +222,10 @@ section {
   background-color: #d32229;
   color: #fff;
   padding-top: 2rem;
-
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   /*padding-bottom: 2rem;*/
 }
 
@@ -248,11 +259,25 @@ section {
 #chatter .card {
   border-top-left-radius: 10%;
   box-shadow: 4px 4px 4px #5d5d5d;
-  height: 32rem;
+  height: 38rem;
+  margin-top: 5rem;
+}
+
+#chatter .card .card-title {
+  min-height: 4rem;
 }
 
 #chatter .card .card-img-top {
   border-bottom: 4px solid #0479bd;
+  min-height: 14rem;
+  transition: all 0.3s;
+  /*height: 14rem;*/
+}
+
+#chatter .card .card-img-top:hover {
+  background-color: red;
+  opacity: 0.7;
+  min-height: 16rem;
 }
 
 #chatter .card footer .fa {
