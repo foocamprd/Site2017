@@ -182,16 +182,23 @@ section {
   position: relative;
 }
 
+.item {
+  z-index: 1;
+  transition: all 0.4s;
+}
 
 .item:hover {
-  background-color: #ccc;
+  /*background-color: rgb(211, 34, 41);*/
+  background-color: #5d5d5d;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transform: scale(1.2);
+  z-index: 100;
 }
 
 .item:hover img {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .item a {
@@ -202,7 +209,7 @@ section {
 .item h4 {
   color: #0479bd;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
   margin-left: 10%;
   width: 80%;
   position: absolute;
