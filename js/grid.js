@@ -2,31 +2,32 @@ $(document).ready(function() {
   console.log("ready");
   var path = "../image/profiles/profile";
   var arrayphoto = new Array();
-  for(var i = 1; i < 13; i++) {
+  var c = 5;
+  for(var i = 1; i < 12; i++) {
     arrayphoto[i - 1] = {url: path + i + ".jpg", sesion: "sesion" + i, title: getTitle(("sesion" + i))};
   }
-  arrayphoto = _.shuffle(arrayphoto);
-  firstDeck = arrayphoto.slice(0,8);
-  secondDeck = arrayphoto.slice(8,10);
-  thirdDeck = arrayphoto.slice(10,12);
   console.log(arrayphoto);
+  var b = "none";
+  arrayphoto = _.shuffle(arrayphoto);
+  firstDeck = arrayphoto.slice(0,7);
+  firstDeck.push({url: src='../image/logo-foocamp.png', sesion: "none", title: " "});
+  firstDeck.push({url: src='../image/logo-foocamp.png', sesion: "none", title: " "});
+  firstDeck = _.shuffle(firstDeck);
+  secondDeck = arrayphoto.slice(7,9);
+  thirdDeck = arrayphoto.slice(9,11);
   // arrayphoto.pop();
   $.each( secondDeck, function( i, val ) {
-    var item = "<div class='col-12 no-padding item'><a href=#"+val.sesion +"><img class'img-fluid'  src=" + val.url + "><h4 style='display:none'>"+val.title +"</h4></a></div>";
+    var item = "<div class='col-12 no-padding item'><a href=#"+val.sesion +"><img class='img-fluid'  src=" + val.url + "><h4 style='display:none'>"+val.title +"</h4></a></div>";
     $("#big1").append(item);
   });
 
   $.each( firstDeck, function( i, val ) {
-    var b = 4;
-    if(i == b){
-      $("#grid").append("<div class='col-4 no-padding'></div>");
-    }
-    var item = "<div class='col-4 no-padding item'><a href=#"+val.sesion +"><img class'img-fluid'  src=" + val.url + "><h4 style='display:none'>"+val.title +"</h4></a></div>";
+    var item = "<div class='col-4 no-padding item'><a href=#"+val.sesion +"><img class='img-fluid'  src=" + val.url + "><h4 style='display:none'>"+val.title +"</h4></a></div>";
     $("#grid").append(item);
   });
 
   $.each( thirdDeck, function( i, val ) {
-    var item = "<div class='col-12 no-padding item'><a href=#"+val.sesion +"><img class'img-fluid'  src=" + val.url + "><h4 style='display:none'>"+val.title +"</h4></a></div>";
+    var item = "<div class='col-12 no-padding item'><a href=#"+val.sesion +"><img class='img-fluid'  src=" + val.url + "><h4 style='display:none'>"+val.title +"</h4></a></div>";
     $("#big2").append(item);
   });
   // $("#big").append("<div class='col-12 no-padding'><a href=#"+lastPhoto.sesion +"><img  class'img-fluid' src=" + lastPhoto.url + "></a></div>");
@@ -70,3 +71,4 @@ function getAtention(i) {
       $(i).find(".card").removeClass('active');
     }, 2000);
 }
+
