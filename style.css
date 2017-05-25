@@ -4,6 +4,14 @@
   color: #d32229;
 }
 
+#small {
+  height: 100%;
+}
+
+#small .item {
+  height: 110px;
+}
+
 .disabled {
   color: #ccc !important;
   opacity: 0.7 !important;

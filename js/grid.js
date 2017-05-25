@@ -3,18 +3,17 @@ $(document).ready(function() {
   var path = "../image/profiles/profile";
   var arrayphoto = new Array();
   var c = 5;
-  for(var i = 1; i < 12; i++) {
+  for(var i = 1; i < 13; i++) {
     arrayphoto[i - 1] = {url: path + i + ".jpg", sesion: "sesion" + i, title: getTitle(("sesion" + i))};
   }
   console.log(arrayphoto);
   var b = "none";
   arrayphoto = _.shuffle(arrayphoto);
-  firstDeck = arrayphoto.slice(0,7);
-  firstDeck.push({url: src='../image/logo-foocamp.png', sesion: "none", title: " "});
+  firstDeck = arrayphoto.slice(0,8);
   firstDeck.push({url: src='../image/logo-foocamp.png', sesion: "none", title: " "});
   firstDeck = _.shuffle(firstDeck);
-  secondDeck = arrayphoto.slice(7,9);
-  thirdDeck = arrayphoto.slice(9,11);
+  secondDeck = arrayphoto.slice(8,10);
+  thirdDeck = arrayphoto.slice(10,12);
   // arrayphoto.pop();
   $.each( secondDeck, function( i, val ) {
     var item = "<div class='col-12 no-padding item'><a href=#"+val.sesion +"><img class='img-fluid'  src=" + val.url + "><h4 style='display:none'>"+val.title +"</h4></a></div>";
@@ -30,6 +29,11 @@ $(document).ready(function() {
     var item = "<div class='col-12 no-padding item'><a href=#"+val.sesion +"><img class='img-fluid'  src=" + val.url + "><h4 style='display:none'>"+val.title +"</h4></a></div>";
     $("#big2").append(item);
   });
+
+ $.each( arrayphoto, function( i, val ) {
+    var item = "<div class='col-4 no-padding item'><a href=#"+val.sesion +"><img class='img-fluid'  src=" + val.url + "><h4 style='display:none'>"+val.title +"</h4></a></div>";
+    $("#small").append(item);
+  });  
   // $("#big").append("<div class='col-12 no-padding'><a href=#"+lastPhoto.sesion +"><img  class'img-fluid' src=" + lastPhoto.url + "></a></div>");
   
   $("#grid .item, #big1 .item, #big2 .item").mouseover(function() {
