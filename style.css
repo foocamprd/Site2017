@@ -4,6 +4,16 @@
   color: #d32229;
 }
 
+.btn-lg {
+  width: 100%;
+  border: 4px solid #0479bd !important;
+  background-color: #d32229 !important;
+  text-align: center;
+  /*margin-left: 35%;*/
+  transition: all 1.0s;
+}
+
+
 #small {
   height: 100%;
 }
@@ -523,6 +533,20 @@ section {
   justify-content: center;
 }
 
+.lg {
+  width: 100%;
+}
+
+.lg .btn-lg {
+  width: 80%;
+  background-color: #000 !important;
+}
+
+.lg .btn-lg:hover {
+  width: 80%;
+  boder-color: #d32229 !important;
+}
+
 .box {
   text-align: center;
   margin-bottom: 20px;
@@ -538,6 +562,20 @@ section {
   margin-bottom: 30px;
 }
 @media(min-width:1024px) {
+
+  #home .btn-lg {
+    width: 30%;
+    border: 4px solid #0479bd !important;
+    margin-left: 35%;
+    transition: all 1.0s;
+  }
+
+  #home .btn-lg:hover {
+    width: 30%;
+    border: 4px solid #d32229 !important;
+    background-color: #0479bd !important;
+    transform: scale(1.1);
+  }
 
   #clockdiv div {
     margin-left: 10px;
