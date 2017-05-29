@@ -517,11 +517,9 @@ section {
   border-bottom: 1px solid #3d68c1 !important;
 }
 
-.navbar-brand img {
-/*  height: 30px;
-*/  width: 30%;
+/*.navbar-brand img {
   margin-left: 75px;
-}
+}*/
 
 .nav-link {
   text-align: center;
@@ -533,18 +531,28 @@ section {
   justify-content: center;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar .image {
+  width: 30%;
+}
+
 .lg {
   width: 100%;
+  margin: auto;
 }
 
 .lg .btn-lg {
-  width: 80%;
+  width: 100%;
   background-color: #000 !important;
 }
 
 .lg .btn-lg:hover {
-  width: 80%;
-  boder-color: #d32229 !important;
+  width: 100%;
+  border-color: #d32229 !important;
 }
 
 .box {
@@ -562,6 +570,10 @@ section {
   margin-bottom: 30px;
 }
 @media(min-width:1024px) {
+
+  .navbar .image {
+    width: 10%;
+  }
 
   #home .btn-lg {
     width: 30%;
@@ -633,10 +645,12 @@ section {
   }
 
   .navbar {
-      padding: 20px 0;
-      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      transition: background .5s ease-in-out,padding .5s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
 
   .top-nav-collapse {
